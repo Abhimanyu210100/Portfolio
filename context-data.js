@@ -43,7 +43,8 @@ const ABHIMANYU_CONTEXT = {
             company: "CVS Health",
             duration: "2023 - Present",
             achievements: [
-                "Saved $9.6M by optimizing overpayment detection algorithms in healthcare claims",
+                "Saved $20M+ by optimizing and creating overpayment detection algorithms in healthcare claims",
+                "Developed a script to reverse engineer competitor claim processing algorithm using machine learning",
                 "Built a 0→1 data pipeline combining structured and unstructured data; added $3M/year and won Excellence Award",
                 "Used LLMs and GenAI to auto-generate SQL/Python from healthcare docs, reducing SME involvement"
             ]
