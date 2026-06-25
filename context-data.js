@@ -5,7 +5,7 @@ const ABHIMANYU_CONTEXT = {
     // Basic Information
     personal: {
         name: "Abhimanyu Swaroop",
-        title: "Data Scientist & AI Engineer",
+        title: "Senior Data Scientist & AI Engineer",
         email: "abhiswaroop210100@gmail.com",
         linkedin: "https://www.linkedin.com/in/abhimanyuswaroop",
         location: "United States"
@@ -13,11 +13,11 @@ const ABHIMANYU_CONTEXT = {
 
     // Current Role
     currentRole: {
-        position: "Data Scientist",
+        position: "Senior Data Scientist",
         company: "CVS Health",
-        duration: "2023 - Present",
+        duration: "2026 - Present",
         department: "Healthcare Analytics",
-        focus: "Healthcare analytics, GenAI, and large language models"
+        focus: "Production multi-agent LLM systems, RAG, healthcare analytics, and large language models"
     },
 
     // Education
@@ -39,23 +39,42 @@ const ABHIMANYU_CONTEXT = {
     // Work Experience
     experience: [
         {
-            role: "Data Scientist",
+            role: "Senior Data Scientist",
             company: "CVS Health",
-            duration: "2023 - Present",
+            duration: "2026 - Present",
             achievements: [
-                "Saved $20M+ by optimizing and creating overpayment detection algorithms in healthcare claims",
-                "Developed a script to reverse engineer competitor claim processing algorithm using machine learning",
-                "Built a 0→1 data pipeline combining structured and unstructured data; added $3M/year and won Excellence Award",
-                "Used LLMs and GenAI to auto-generate SQL/Python from healthcare docs, reducing SME involvement"
+                "Architected and deployed a production multi-agent LLM system for medical policy retrieval, using an intent-classification agent (new vs. follow-up) and dynamic keyword generation to improve retrieval across two data sources",
+                "Built a BM25-based reranking and summarization pipeline with document-diversity constraints, enabling more relevant responses in a system actively used by internal teams",
+                "Scoped problem framing and defined methodology for an overpayment detection algorithm, driving $1.7M in incremental medical cost savings"
             ]
         },
         {
-            role: "Data Analyst",
+            role: "Data Scientist",
+            company: "CVS Health",
+            duration: "2023 - 2026",
+            achievements: [
+                "Developed and maintained overpayment detection algorithms end-to-end, partnering with business stakeholders to translate domain knowledge into models; cumulative impact of $25M+ over 2.5 years",
+                "Reverse-engineered a competitor's claim processing logic using Decision Trees, Explainable Boosting Models, and XGBoost, producing an interpretable model that exposed the underlying decision rules",
+                "Led an 8-month cross-functional discovery across 100+ overpayment reason codes; built the detection algorithm from scratch and displaced the existing methodology, generating $3M+ in year one and earning the Excellence Award"
+            ]
+        },
+        {
+            role: "Analyst",
             company: "DIA Ventures",
             duration: "2023",
             achievements: [
-                "Engineered a hybrid ML framework combining regression and classification to estimate credit recovery",
-                "Built clustering models to segment credit card audiences across partner ecosystems"
+                "Built a two-stage model combining classification and regression to estimate expected credit recovery amounts",
+                "Analyzed airline spend distribution and outlier trends for American Express business card holders to identify targets for marketing outreach and partnership opportunities"
+            ]
+        },
+        {
+            role: "Data Scientist (Capstone)",
+            company: "Ralph Lauren",
+            duration: "2022",
+            achievements: [
+                "Led data ingestion of 4M+ rows across 3 distributed sources (clickstream, product inventory, metadata) using Dataiku; engineered a session-level aggregation pipeline to extract search-to-purchase conversion signals",
+                "Designed and compared two product recommendation frameworks (embedding similarity and binary classification), achieving over 2x improvement in top-3 precision and recall on Ralph Lauren's e-commerce search",
+                "Proposed a towering architecture combining both methods, with fine-tuned BERT embeddings showing further uplift on the validation set"
             ]
         },
         {
@@ -109,39 +128,45 @@ const ABHIMANYU_CONTEXT = {
 
     // Technical Skills
     skills: {
-        programming: ["Python", "SQL", "R", "C++"],
-        machineLearning: ["TensorFlow", "PyTorch", "Scikit-learn", "Large Language Models", "Generative AI", "NLP"],
-        bigData: ["GCP", "Hadoop", "BigQuery", "SparkSQL"],
-        analytics: ["Matplotlib", "Seaborn", "Plotly"],
+        programming: ["Python", "SQL", "PySpark", "R", "C", "MATLAB"],
+        machineLearning: ["Large Language Models", "Generative AI", "Multi-Agent Systems", "RAG", "LangChain", "Pydantic", "Scikit-learn", "XGBoost", "CatBoost", "TensorFlow", "NLTK", "NLP"],
+        bigData: ["GCP", "Azure Databricks", "BigQuery", "Hive", "SparkSQL"],
+        analytics: ["Dash", "D3", "Matplotlib", "Seaborn", "Plotly", "Numpy", "Pandas"],
         // healthcare: ["Claims Analysis", "Predictive Analytics"],
-        tools: ["Git", "Jupyter", "Databricks", "Dataiku", "MATLAB"]
+        tools: ["Git", "GitHub Actions (CI/CD)", "Jupyter", "Databricks", "Dataiku"]
     },
 
     // Key Projects
     projects: [
         {
-            name: "Healthcare Claims Payment Optimization",
-            description: "Saved over $9.6M by optimizing and developing overpayment detection algorithms in healthcare claims",
-            impact: "Major cost savings and operational efficiency improvement",
-            technologies: ["Python", "Machine Learning", "Healthcare Analytics", "GenAI"]
+            name: "Production Multi-Agent LLM System for Medical Policy Retrieval",
+            description: "Architected and deployed a production multi-agent LLM system using an intent-classification agent (new vs. follow-up) and dynamic keyword generation, plus a BM25-based reranking and summarization pipeline with document-diversity constraints",
+            impact: "Improved retrieval across two data sources; actively used by internal teams at CVS Health",
+            technologies: ["Large Language Models", "Multi-Agent Systems", "RAG", "LangChain", "BM25", "GenAI", "NLP"]
         },
         {
-            name: "0-1 Data Pipeline Development",
-            description: "Built end-to-end claims prioritization pipeline combining structured and understructed data",
-            impact: "Established a new business vertical, added $3M/year revenue, won CVS Health Premier Award",
-            technologies: ["Big Data", "Best Project", "Data Engineering", "GenAI", "Collaboration", "Communication", "Consulting"]
+            name: "Healthcare Overpayment Detection Algorithms",
+            description: "Developed and maintained overpayment detection algorithms end-to-end, partnering with business stakeholders to translate domain knowledge into models",
+            impact: "Cumulative impact of $25M+ over 2.5 years in medical cost savings",
+            technologies: ["Python", "Machine Learning", "XGBoost", "Healthcare Analytics"]
         },
         {
-            name: "GenAI Code Generation",
-            description: "Applied LLMs to auto-generate insights and SQL/Python code from healthcare financial documents",
-            impact: "Reduced SME involvement, accelerated development cycles, and assisted business to set future roadmap",
-            technologies: ["Large Language Models", "GenAI", "NLP", "Consulting"]
+            name: "Overpayment Detection Algorithm (0-1 Discovery)",
+            description: "Led an 8-month cross-functional discovery across 100+ overpayment reason codes; built a detection algorithm from scratch that displaced the existing methodology",
+            impact: "Generated $3M+ in year one and earned the CVS Health Excellence Award",
+            technologies: ["Machine Learning", "Data Engineering", "Stakeholder Discovery", "Collaboration", "Consulting"]
         },
         {
-            name: "Recommendation System for Ecommerce",
-            description: "Designed a two-stage recommendation architecture leveraging content-based filtering and real-time ranking for hyper-personalized results",
-            impact: "Boosted recommendation click-through rate by ~30%",
-            technologies: ["Machine Learning", "Recommendation Systems", "Collaborative Filtering", "Content-Based Filtering", "Seasonality Trend Analysis"]
+            name: "Competitor Claim Processing Reverse-Engineering",
+            description: "Reverse-engineered a competitor's claim processing logic using Decision Trees, Explainable Boosting Models, and XGBoost to produce an interpretable model exposing the underlying decision rules",
+            impact: "Informed CVS's own claim processing strategy",
+            technologies: ["Decision Trees", "Explainable Boosting Models", "XGBoost", "Interpretable ML"]
+        },
+        {
+            name: "Ralph Lauren E-commerce Recommendation System (Capstone)",
+            description: "Designed and compared two product recommendation frameworks (embedding similarity and binary classification) over 4M+ rows ingested via Dataiku, plus a towering architecture validated with fine-tuned BERT embeddings",
+            impact: "Achieved over 2x improvement in top-3 precision and recall on Ralph Lauren's e-commerce search",
+            technologies: ["Machine Learning", "Recommendation Systems", "BERT", "Embeddings", "Dataiku", "Content-Based Filtering"]
         },
         {
             name: "Credit Recovery ML Framework",
@@ -162,10 +187,16 @@ const ABHIMANYU_CONTEXT = {
             technologies: ["Machine Learning", "Classification", "Python", "MATLAB"]
         },
         {
-            name: "Harvard University: LISH Hackathon 2022",
-            description: "Created an ensemble of boosting models to predict waterpoint failure in Africa",
-            impact: "Came in 1st place for the best Machine Learning Model",
-            technologies: ["Ensemble Modeling", "CATBoost", "Machine Learning", "Boosting Algorithms", "Geospatial Data", "Classification", "Public Health", "Competition Winner", "Hackathon"]
+            name: "Intuit AI/ML Hackathon (NY Tech Week): Small Business Loan Portfolio Optimization",
+            description: "Built a calibrated ML pipeline with survival modeling and recovery regression to predict default recovery, timing, and recovery amount per applicant, replacing a fixed approval threshold with a dynamic per-applicant funding decision framework",
+            impact: "Placed 2nd in the competition",
+            technologies: ["Machine Learning", "Survival Modeling", "Regression", "Risk Modeling", "Calibration", "Hackathon"]
+        },
+        {
+            name: "Harvard Datathon @ LISH: Predicting Operational Status in Tanzania",
+            description: "Built an ensemble of 10 independently tuned CatBoost classifiers with averaged probability outputs to predict the operational status of waterpoints in Tanzania; achieved a log loss of 0.364",
+            impact: "Ranked 1st among all teams at the Harvard LISH Datathon",
+            technologies: ["Ensemble Modeling", "CatBoost", "Machine Learning", "Boosting Algorithms", "Geospatial Data", "Classification", "Public Health", "Competition Winner", "Hackathon"]
         },
         {
             name: "IIT Madras: Biker Recommendation Hackathon 2020",
@@ -178,10 +209,10 @@ const ABHIMANYU_CONTEXT = {
     // Awards & Recognition
     awards: [
         {
-            name: "Premier Award",
+            name: "Excellence Award",
             organization: "CVS Health",
-            year: "2025",
-            description: "Recognized for leading technical development for claims prioritization model that streamlined audits and drove $3M in annual medical cost savings"
+            year: "2024",
+            description: "Recognized for building an overpayment detection algorithm from scratch that displaced the existing methodology and drove $3M+ in first-year medical cost savings"
         },
         {
             name: "B.Krishnamurthy Award",
@@ -217,6 +248,8 @@ const ABHIMANYU_CONTEXT = {
     expertise: [
         "Generative AI",
         "Large Language Models",
+        "Multi-Agent Systems",
+        "Retrieval-Augmented Generation (RAG)",
         "Machine Learning",
         "Healthcare Analytics",
         "Big Data Systems",
